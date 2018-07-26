@@ -10,3 +10,4 @@ class GalleryByReact extends React.Component{
       )
   }
 }
+

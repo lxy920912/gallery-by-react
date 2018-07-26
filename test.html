@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <style type="text/css" media="screen">
+    .pic{
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      background-color: #666;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .is-reverse{
+      transform: rotate(180deg);
+    }
+
+  </style>
+  <script>
+    function handle(){
+      console.log('click');
+      var oDiv = document.getElementsByClassName('pic')[0];
+      oDiv.setAttribute('class','pic is-reverse');
+      console.log(oDiv);
+    }
+  </script>
+</head>
+<body>
+  <div class="pic">
+    <img src="src/images/1.jpg" onclick="handle()" />
+  </div>
+</body>
+</html>
